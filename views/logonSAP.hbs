@@ -1,0 +1,70 @@
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Logon</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- <script src="script.js"></script> -->
+	</head>
+	<body>
+		<div class="sapContainer">
+			<img class="logo" src="images/sap_logo.png" alt="logo_sap" />
+			<div>
+				<form id="formSAP" action="">
+					<input
+						type="text"
+						id="usernameSAP"
+						name="usernameSAP"
+						placeholder="User"
+					/>
+
+					<input
+						type="password"
+						id="oldpasswordSAP"
+						name="oldPasswordSAP"
+						placeholder="Old Password"
+					/>
+
+					<input
+						type="password"
+						id="newPasswordSAP"
+						name="newPasswordSAP"
+						placeholder="New Password"
+					/>
+
+					<input
+						type="password"
+						id="confNewPasswordSAP"
+						name="confNewPasswordSAP"
+						placeholder="Confirm New Password"
+					/>
+
+					<p>Language</p>
+
+					<select name="language" id="language">
+						<option value=""></option>
+						<option value="DE">DE - Deutsch</option>
+						<option value="EN" selected="">EN - English</option>
+						<option value="FR">FR - Français</option>
+					</select>
+
+					<input
+						type="text"
+						id="sapClient"
+						name="sapClient"
+						placeholder="Client"
+						maxlength="3"
+						value="900"
+					/>
+
+					<button class="buttonSAP">Change password</button>
+				</form>
+
+			</div>
+
+			<p class="copyrightSAP">Copyright © 2023 SAP SE All Rights Reserved.</p>
+		</div>
+
+		<script src="js/script.js"></script>
+
+	</body>
+</html>
