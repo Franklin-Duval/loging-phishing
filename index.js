@@ -25,7 +25,7 @@ app.set("view engine", "hbs");
 // app.set("views", "./views");
 
 app.get("/", (req, res) => {
-	res.redirect("/login");
+	res.json({ test: "5" });
 });
 
 app.get("/login", (req, res) => {
