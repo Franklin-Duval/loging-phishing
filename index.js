@@ -24,6 +24,10 @@ app.engine(
 app.set("view engine", "hbs");
 // app.set("views", "./views");
 
+app.get("/", (req, res) => {
+	res.redirect("/login");
+});
+
 app.get("/login", (req, res) => {
 	res.render("loginAD");
 });
